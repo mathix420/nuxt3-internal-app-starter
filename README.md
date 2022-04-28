@@ -4,9 +4,7 @@ Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
 ## Deployment checklist
 
-- [ ] Uncomment `.github/workflows/cloudflare.yml` content
 - [ ] Fill missing fields in `wrangler.toml`
-- [ ] Add a favicon in `public/`
 - [ ] Setup Cloudflare Access rules
 - [ ] [Install and setup wrangler](https://developers.cloudflare.com/workers/cli-wrangler/install-update/#install)
 - [ ] Run `wrangler publish`
