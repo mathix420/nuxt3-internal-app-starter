@@ -1,11 +1,13 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 Internal App Starter
+
+Create a blazingly fast, zero-trust-authed business internal app in seconds. 🚀
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
 ## Deployment checklist
 
 - [ ] Fill missing fields in `wrangler.toml`
-- [ ] Setup Cloudflare Access rules
+- [ ] Setup Cloudflare Access rules on your domain
 - [ ] [Install and setup wrangler](https://developers.cloudflare.com/workers/cli-wrangler/install-update/#install)
 - [ ] Run `wrangler publish`
 
@@ -43,10 +45,12 @@ Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) f
 
 ## Linting
 
+Lint files.
 ```bash
 npm run lint
 ```
 
+Fix files.
 ```bash
 npm run lintfix
 ```
