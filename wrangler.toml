@@ -1,0 +1,15 @@
+name = "starter-internal-app"
+type = "javascript"
+account_id = ""
+workers_dev = false
+route = ""
+zone_id = ""
+compatibility_date = "2022-04-28"
+
+[site]
+bucket = ".output/public"
+entry-point = ".output"
+
+[build]
+command = "true"
+upload.format = "service-worker"
