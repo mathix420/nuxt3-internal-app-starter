@@ -6,9 +6,9 @@ Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
 ## Deployment checklist
 
-- [ ] Fill missing fields in `wrangler.toml`
-- [ ] Setup Cloudflare Access rules on your domain
-- [ ] [Install and setup wrangler](https://developers.cloudflare.com/workers/cli-wrangler/install-update/#install)
+- [ ] [Fill missing fields](https://nitro.unjs.io/deploy/providers/cloudflare.html) in `wrangler.toml`
+- [ ] Setup [Cloudflare Access](https://dash.teams.cloudflare.com//access/apps/add) rules on your domain
+- [ ] [Install](https://developers.cloudflare.com/workers/cli-wrangler/install-update/#install) and [login](https://developers.cloudflare.com/workers/cli-wrangler/authentication/#using-commands) on wrangler cli
 - [ ] Run `wrangler publish`
 
 ## Setup
@@ -54,3 +54,13 @@ Fix files.
 ```bash
 npm run lintfix
 ```
+
+## Github Action
+
+Generate a [Cloudflare API token](https://dash.cloudflare.com/profile/api-tokens) with following permissions:
+```
+All accounts - Workers R2 Storage:Edit, Workers Tail:Read, Workers KV Storage:Edit, Workers Scripts:Edit, Account Settings:Read
+All zones - Workers Routes:Edit
+All users - User Details:Read
+```
+Add it to your GitHub repo secrets below the name `CF_API_TOKEN`.
